@@ -86,7 +86,7 @@ From the provided CV, extract and format the following in clean, valid HTML (no 
 
     # Call Mistral API
     with st.spinner("Processing CV..."):
-        chat_response = client.chat.complete(
+        chat_response = client.chat(
             model="mistral-small-latest",
             messages=messages,
             response_format={"type": "text"},
