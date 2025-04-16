@@ -6,7 +6,7 @@ import pymupdf
 from mistralai import Mistral
 
 # Initialize Mistral client
-api_key = "key"
+api_key = st.secrets["MISTRAL_API_KEY"]
 client = Mistral(api_key=api_key)
 
 st.title("CV to HTML")
