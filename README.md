@@ -37,7 +37,6 @@ Cette approche permet désormais une extraction de texte fiable et une organisat
         
         ```bash
         bash
-        CopyEdit
         cd chemin/vers/votre/dossier
         ```
         
@@ -46,7 +45,6 @@ Cette approche permet désormais une extraction de texte fiable et une organisat
         
         ```bash
         bash
-        CopyEdit
         python -m venv env
         ```
         
@@ -58,7 +56,6 @@ Cette approche permet désormais une extraction de texte fiable et une organisat
         
         ```bash
         bash
-        CopyEdit
         .\env\Scripts\activate
         ```
         
@@ -66,7 +63,6 @@ Cette approche permet désormais une extraction de texte fiable et une organisat
         
         ```bash
         bash
-        CopyEdit
         source env/bin/activate
         ```
         
@@ -80,7 +76,6 @@ Cette approche permet désormais une extraction de texte fiable et une organisat
         
         ```bash
         bash
-        CopyEdit
         pip install -r requirements.txt
         ```
         
@@ -92,7 +87,6 @@ Cette approche permet désormais une extraction de texte fiable et une organisat
         
         ```bash
         bash
-        CopyEdit
         streamlit run app.py
         ```
         
@@ -104,7 +98,6 @@ Cette approche permet désormais une extraction de texte fiable et une organisat
     
     ```bash
     bash
-    CopyEdit
     deactivate
     ```
     
