@@ -2,7 +2,7 @@ import streamlit as st
 import tempfile
 import os
 import pdfkit
-import pymupdf
+import fitz
 from mistralai import Mistral
 
 # Initialize Mistral client
@@ -28,7 +28,7 @@ if uploaded_file:
     # Extract text from PDF
     text_content = ""
     try:
-        pdf_document = pymupdf.open(temp_path)
+        pdf_document = fitz.open(temp_path)
         for page_num in range(len(pdf_document)):
             page = pdf_document[page_num]
             text_content += page.get_text()
