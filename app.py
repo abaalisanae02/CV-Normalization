@@ -3,11 +3,11 @@ import tempfile
 import os
 import pdfkit
 import fitz
-from mistralai import Mistral
+from mistralai.client import MistralClient
 
 # Initialize Mistral client
 api_key = st.secrets["MISTRAL_API_KEY"]
-client = Mistral(api_key=api_key)
+client = MistralClient(api_key=api_key)
 
 st.title("CV to HTML")
 st.write("Upload a CV (PDF), and we'll generate a structured HTML version you can edit and export.")
