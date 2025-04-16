@@ -13,12 +13,12 @@ st.title("CV to HTML")
 st.write("Upload a CV (PDF), and we'll generate a structured HTML version you can edit and export.")
 
 uploaded_file = st.file_uploader("Upload your CV (PDF)", type=["pdf"])
-original_filename = uploaded_file.name
-base_filename = os.path.splitext(original_filename)[0]  # Extract filename without extension
-output_filename_prefix = base_filename + " Go&Dev"
 
 if uploaded_file:
     st.success("PDF uploaded successfully!")
+    original_filename = uploaded_file.name
+    base_filename = os.path.splitext(original_filename)[0]  # Extract filename without extension
+    output_filename_prefix = base_filename + " Go&Dev"
 
     # Save the file temporarily
     with tempfile.NamedTemporaryFile(delete=False, suffix=".pdf") as temp:
