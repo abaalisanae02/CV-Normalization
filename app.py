@@ -133,7 +133,7 @@ if 'html_output' in locals():
     mime="text/html",
 )
     # Convert HTML to PDF and provide download option
-    path_wkhtmltopdf = r'C:\Program Files\wkhtmltopdf\bin\wkhtmltopdf.exe'
+    path_wkhtmltopdf = '/usr/bin/wkhtmltopdf'
     config = pdfkit.configuration(wkhtmltopdf=path_wkhtmltopdf)
     pdf_filename = f"{output_filename_prefix}.pdf"
     options = { 'encoding': 'UTF-8' }
