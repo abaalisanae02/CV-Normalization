@@ -146,7 +146,7 @@ if 'html_output' in locals():
         mime="application/pdf",
     )
     # Convert HTML to .doc and provide download option
-    doc_filename = "generated_cv.doc"
+    doc_filename = "generated_cv.docx"
     with open(doc_filename, "w", encoding="utf-8") as doc_file:
         # Word opens HTML nicely if content is well-formed
         doc_file.write(html_output)
